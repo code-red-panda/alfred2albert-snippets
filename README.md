@@ -27,7 +27,6 @@ SNIPPET_PATH = '/home/jake/Dropbox/Alfred/Alfred.alfredpreferences/snippets'
 - Go to "Extensions"
 - Enable the "Python" extension
 - Within the Python extension settings, activate "Alfred2Albert Snippets"
-![screenshot](./activate_module.png)
 
 ## Usage
 In Albert, type the trigger `sn` to then search your snippets by directory name or snippet name.
