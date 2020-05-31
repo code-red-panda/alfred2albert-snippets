@@ -7,7 +7,7 @@ This extension allows you to use Alfred's snippets, but it cannot add/edit/delet
 I am using Alfred v3 and have not tested with Alfred v4.
 
 ## Installation
-Download alfred2albert-snippets.py to one of Albert Launchers folders for python extensions:
+1) Download `alfred2albert-snippets.py` to one of Albert Launcher's folders for python extensions:
 - ~/.local/share/albert/org.albert.extension.python/modules
 - /usr/local/share/albert/org.albert.extension.python/modules
 - /usr/share/albert/org.albert.extension.python/modules
@@ -15,21 +15,22 @@ Download alfred2albert-snippets.py to one of Albert Launchers folders for python
 ```
 curl -o ~/.local/share/albert/org.albert.extension.python/modules/alfred2albert-snippets.py https://raw.githubusercontent.com/code-red-panda/alfred2albert-snippets/master/alfred2albert-snippets.py
 ```
-Modify the `SNIPPET_PATH` to point Alfred2Albert Snippets to your Alfred Snippets directory. For example, mine are sync'd across my Mac and Linux via Dropbox:
+2) Modify the `SNIPPET_PATH` to point Alfred2Albert Snippets to your Alfred Snippets directory. For example, mine are sync'd across my Mac and Linux via Dropbox:
 ```
 vi ~/.local/share/albert/org.albert.extension.python/modules/alfred2albert-snippets.py
 
 SNIPPET_PATH = '/home/jake/Dropbox/Alfred/Alfred.alfredpreferences/snippets'
 ```
 
-Activate the module in Albert:
+3) Activate the module in Albert:
 - Open Albert Launcher's Settings
 - Go to "Extensions"
 - Enable the "Python" extension
 - Within the Python extension settings, activate "Alfred2Albert Snippets"
+![screenshot](./activate_module.png)
 
 ## Usage
-In Albert, type `sn` to then search your snippets by directory or snippet name.
+In Albert, type the trigger `sn` to then search your snippets by directory name or snippet name.
 
 The results will display the first 12 characters of the snippet's parent directory followed by the snippet name.
 ![screenshot](./search_example.png)
